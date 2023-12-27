@@ -4,7 +4,7 @@
 function App() {
 
   return (
-    <h1>react with vite | Sonan</h1>
+    <h1>react with vite | Sonam</h1>
   )
 }
 
