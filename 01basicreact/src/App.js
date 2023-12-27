@@ -2,7 +2,9 @@
 
 function App() {
   return (
-    <h1>react</h1>
+    <h1>Sonam 
+      Hello guys i'm Sonam , a react learner which improve my coding skills.
+    </h1>
   );
 }
 
