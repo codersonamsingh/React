@@ -23,6 +23,6 @@ const anotherElement = (
 )
 ReactDOM.createRoot(document.getElementById('root')).render(
   
-    <ReactElement />
+    anotherElement
   
 )
