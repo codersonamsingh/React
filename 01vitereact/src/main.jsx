@@ -15,11 +15,16 @@ const reactElement = {
   props: {
     href: 'https://google.com',
     target: 'blank'
-  }
+  },
+  children: 'Click to visit google'
 }
+const anotherElement = (
+  <a href="https://google.com" target='blank'></a>
+)
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   
-    <App />
+    <reactElement />
   
 )
