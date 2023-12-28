@@ -12,7 +12,7 @@ function customRender(reactElement, container){
     const domElement = document.createElement
     (reactElement.type)
     domElement.innerHTML = reactElement.children
-    for (const prop in props){
+    for (const prop in Props){
         if (prop == children) continue;
         domElement.setAttribute(prop, reactElement.props
             [prop])
@@ -30,3 +30,5 @@ const reactElement = {
     children: 'Click me to visit google'
 }
 const mainContainer = document.querySelector('#root')
+
+customRender (reactElement, mainContainer)
