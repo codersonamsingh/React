@@ -6,12 +6,14 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  let Counter = 15
   return (
     <>
       <h1>React or vite</h1>
-      <h2>Counter valu: 5</h2>
+      <h2>Counter value: {Counter }</h2>
 
       <button>Add value</button>
+      <br />
       <button>decrease value</button>
       
 
