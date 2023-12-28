@@ -5,13 +5,21 @@ import App from './App.jsx'
 function MyApp(){
   return (
     <div>
-      <h1>Custom App</h1>
+      <h1>Custom App | react</h1>
     </div>
   )
 }
 
+const reactElement = {
+  type: 'a',
+  props: {
+    href: 'https://google.com',
+    target: 'blank'
+  }
+}
+
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  
     <App />
-  </React.StrictMode>,
+  
 )
