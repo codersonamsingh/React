@@ -19,12 +19,10 @@ const reactElement = {
   children: 'Click to visit google'
 }
 const anotherElement = (
-  <a href="https://google.com" target='blank'></a>
+  <a href="https://google.com" target='blank'>visit google</a>
 )
-
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   
-    <reactElement />
+    <ReactElement />
   
 )
