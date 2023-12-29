@@ -8,7 +8,9 @@ function App() {
 
   let Counter = 15
   const addValue = () => {
-    console.log("Clicked",Counter)
+    console.log("Clicked",Counter);
+
+    setCounter(Counter + 1)
   }
   return (
     <>
