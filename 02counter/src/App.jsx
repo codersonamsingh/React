@@ -4,9 +4,12 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCounter] = useState(15)
 
   let Counter = 15
+  const addValue = () => {
+    console.log("Clicked",Counter)
+  }
   return (
     <>
       <h1>React or vite</h1>
