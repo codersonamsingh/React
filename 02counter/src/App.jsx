@@ -13,6 +13,10 @@ function App() {
 
     setCounter(counter)
   }
+
+  const removeValue = {} => {
+    setCounter{counter - 1}
+  }
   return (
     <>
       <h1>React or vite</h1>
@@ -23,7 +27,10 @@ function App() {
       
       >Add value {counter} </button>
       <br />
-      <button>remove value {counter}</button>
+
+      <button
+      onClick={removeValue}
+      >remove value {counter}</button>
       <p>footer: {counter}</p>
 
     </>
