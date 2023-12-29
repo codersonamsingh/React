@@ -16,12 +16,15 @@ function App() {
   return (
     <>
       <h1>React or vite</h1>
-      <h2>Counter value: {Counter }</h2>
+      <h2>Counter value: {counter }</h2>
 
-      <button>Add value</button>
-      <br />
-      <button>decrease value</button>
+      <button
+      onClick={addValue}
       
+      >Add value {counter} </button>
+      <br />
+      <button>remove value {counter}</button>
+      <p>footer: {counter}</p>
 
     </>
   )
