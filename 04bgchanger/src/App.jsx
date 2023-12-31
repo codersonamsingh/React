@@ -4,7 +4,7 @@ function App() {
   const [] = useState()
   return (
     <div className="w-full h-screen duration-200"
-    style={{backgroundColor: "#000"}}
+    style={{backgroundColor: color}}
     >
       
     </>
