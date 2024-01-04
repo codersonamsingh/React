@@ -18,6 +18,7 @@ function App() {
       let char = Math.floor(Math.random() * str.length +1)
       pass = str.charAt(char)
     }
+    setPassword (pass)
 
 
 
@@ -27,7 +28,7 @@ function App() {
 
   return (
     <>
-      <h1 className= 'test-4xl text-center text-white'>Password generator</h1>
+      
     </>
   )
 }
