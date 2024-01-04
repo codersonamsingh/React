@@ -51,6 +51,7 @@ function App() {
           value={length}
           className='cursor-pointer'
           />
+          <label>Length: {length}</label>
         </div>
       </div>
 
