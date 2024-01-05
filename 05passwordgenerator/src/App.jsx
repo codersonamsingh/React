@@ -24,6 +24,7 @@ function App() {
 
   }
     , [length, numberAllowed, charAllowed, setPassword])
+    PasswordGenerator()
  
 
   return (
