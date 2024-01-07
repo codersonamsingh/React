@@ -7,7 +7,7 @@ function App() {
   const [numberAllowed, setNumberAllowed] = useState
   (false);
   const [charAllowed, setCharAllowed] = useState(false)
-  const [Password, setPassword] = useState ("")
+  const [password, setPassword] = useState ("")
 
 //useRef hook
 const passwordRef = useRef(null)
@@ -15,7 +15,7 @@ const passwordRef = useRef(null)
 
 
 
-  const PasswordGenerator = useCallback(() => {
+  const passwordGenerator = useCallback(() => {
     let pass = ""
     let str =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -35,11 +35,11 @@ const passwordRef = useRef(null)
     passwordRef.current?.select();
     passwordRef.current?.setSelectionRange(0, 9);
 
-    window.navigator.clipboard.writeText(Password)
-    }, [Password])
+    window.navigator.clipboard.writeText(password)
+    }, [password])
 
     useEffect(() => {
-      PasswordGenerator()
+      passwordGenerator()
     }, [length, numberAllowed, charAllowed, PasswordGenerator])
     
   return (
