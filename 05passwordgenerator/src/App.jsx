@@ -31,6 +31,8 @@ const passwordRef = useRef(null)
   }
     , [length, numberAllowed, charAllowed, setPassword])
 
+    const copyPasswordToClipboard = useCallback(() => {}, [Password])
+
     useEffect(() => {
       PasswordGenerator()
     }, [length, numberAllowed, charAllowed, PasswordGenerator])
