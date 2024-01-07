@@ -10,7 +10,8 @@ function App() {
   const [Password, setPassword] = useState ("")
   const PasswordGenerator = useCallback(() => {
     let pass = ""
-    let str ="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+    let str =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
     if (numberAllowed) str += "0123456789"
     if (charAllowed) str += "!@#$%^&*(){}[]"
 
@@ -29,9 +30,9 @@ function App() {
     
   return (
     
-    <div className= 'w-full max-w-md mx-auto shadow-md rounded-lg px-4 my-8 text-orange-500 bg-gray-700 '>
+    <div className= "w-full max-w-md mx-auto shadow-md rounded-lg px-4 my-8 text-orange-500 bg-gray-700">
       <h1 className='text-white test-center my-3'>Password-generator</h1>
-      <div className='className="flex shadow rounded-lg overflow-hidden mb-4 "'>
+      <div className="flex shadow rounded-lg overflow-hidden mb-4 ">
         <input
         type="text"
         value={Password}
