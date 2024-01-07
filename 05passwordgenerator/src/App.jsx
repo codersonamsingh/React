@@ -8,6 +8,13 @@ function App() {
   (false);
   const [charAllowed, setCharAllowed] = useState(false)
   const [Password, setPassword] = useState ("")
+
+//useRef hook
+const passwordRef = useRef(null)
+
+
+
+
   const PasswordGenerator = useCallback(() => {
     let pass = ""
     let str =
@@ -39,8 +46,10 @@ function App() {
         className="outline-none w-full py-1 p-3"
         placeholder="Password"
         readOnly
+        ref={passwordRef}
           />
           <button
+          onClick={copyPasswordToClipboard}
           className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'
           >copy</button>
       </div>
