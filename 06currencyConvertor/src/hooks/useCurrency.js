@@ -1,3 +1,11 @@
+
 import { useEffect } from "react";
 
-const import 
+function useCurrencyInfo(currency){
+    useEffect (() => {
+        fetch()
+    })
+}
+
+
+
