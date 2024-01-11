@@ -5,3 +5,5 @@ function InputBox() {
         <div> InputBox</div>
     )
 }
+
+export default InputBox
