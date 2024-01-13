@@ -39,12 +39,18 @@ function App() {
               <form
                   onSubmit={(e) => {
                       e.preventDefault();
+                      convert()
                      
                   }}
               >
                   <div className="w-full mb-1">
                       <InputBox
                           label="From"
+                          amount={amount}
+                          currencyOption={options}
+                          onCurrencyChange={(currency)
+                          => setAmount(amount)}
+                          selectCurrency={from}
                           
                       />
                   </div>
@@ -52,7 +58,7 @@ function App() {
                       <button
                           type="button"
                           className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5"
-                          
+                          onClick={swap}
                       >
                           swap
                       </button>
