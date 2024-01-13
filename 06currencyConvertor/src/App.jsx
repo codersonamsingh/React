@@ -12,6 +12,25 @@ function App() {
 
   const useCurrencyInfo = useCurrencyInfo(from)
 
+  const options = Objects.keys(currencyInfo)
+
+  const swap = () => {
+    setfrom (to)
+    setTo(from)
+    setConvertedAmount(amount)
+    setAmount(convertedAmounnt)
+  }
+
+ const convert = () => {
+   setConvertedAmount(amount * currencyInfo[to])
+ }
+
+  
+
+
+
+
+
   return (
     <>
       <h1 className='text-3xl bg-orange-500'> Currency app with react</h1>
