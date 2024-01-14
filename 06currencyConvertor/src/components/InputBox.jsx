@@ -4,9 +4,9 @@ function InputBox({
     label,
     amount,
     onAmountChange,
-    onCurrencyConvertor,
-    currencyOption = [],
-    selectCurrency = "usdi",
+    onCurrencyChange,
+    currencyOptions = [],
+    selectCurrency = "usd",
     amountDisable = false,
     currencyDisable = false,
     
@@ -43,9 +43,11 @@ function InputBox({
                     disabled={currencyDisable}
                     
                 >
-                    {currencyOption.map((currency)=>
+                    {currencyOptions.map((currency)=>
                      (
-                        <option key={currency} value={currency}>
+                        <option key={currency} 
+                        value={currency}>
+                            {currency}
 
                         </option>
                         
