@@ -1,16 +1,22 @@
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
+
 import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './components/Header/header'
+import Footer from './components/Footer/Footer'
+import 
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1 className='bg-Green-600 p-4'> React router</h1>
+      <Header />
+      <Footer />
+      <Home />
     </>
   )
 }
+import Home from './Home/Home'
 
 export default App
