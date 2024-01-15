@@ -1,9 +1,7 @@
+import { useState } from 'react'
+//import reactLogo from './assets/react.svg'
 
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './components/Header/header'
-import Footer from './components/Footer/Footer'
-import 
+
 
 
 function App() {
@@ -11,12 +9,10 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Footer />
-      <Home />
+      
     </>
   )
 }
-import Home from './Home/Home'
+
 
 export default App
