@@ -2,13 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import LayOut from './Layout.jsx'
 import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx' 
 import Contact from './components/Contact/Contact.jsx'
 
-const router = createBrowserRouter ([
+//const router = createBrowserRouter ([
   {
     path: '/',
     element: <LayOut/>,
@@ -29,7 +29,20 @@ const router = createBrowserRouter ([
   ]
 
   }
-])
+//])
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<LayOut />}>
+      <Route path='' element={<Home />} />
+      <Route path='about' element={<About />}/>
+      <Route path='contact' element={< Contact />}/>
+      <Route path='user/:userid' element={<User />}/>
+      
+    
+    </Route>
+  )
+)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
