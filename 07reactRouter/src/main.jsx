@@ -7,28 +7,28 @@ import LayOut from './Layout.jsx'
 import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx' 
 import Contact from './components/Contact/Contact.jsx'
-
+import User from './components/User/User.jsx'
 //const router = createBrowserRouter ([
-  {
-    path: '/',
-    element: <LayOut/>,
-    children:[
-      {
-        path:"",
-        element: <Home />
-    },
-    {
-      path: "about",
-      element: <About/>
-    },
+  //{
+   // path: '/',
+    //element: <LayOut/>,
+    //children:[
+      //{
+        //path:"",
+        //element: <Home />
+    //},
+    //{
+      //path: "about",
+      //element: <About/>
+    //},
 
-    {
-      path: "contact",
-      element: <Contact/>
-    }
-  ]
+    //{
+      //path: "contact",
+      //element: <Contact/>
+    //}
+  //]
 
-  }
+ // }
 //])
 
 const router = createBrowserRouter(
